@@ -56,8 +56,15 @@
         <ul>
           <li><a class="nav-link scrollto" href="#hero">Clases</a></li>
           <li><a class="nav-link scrollto" href="#about">Calendario</a></li>
+		  <li>
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+			Ajustes
+			</button>
+			</li>
           <li><a class="nav-link scrollto" href=""><img src="assets/img/translate-icon.ico" width="20px" height="20px"></a></li>
-          <li><a class="nav-link scrollto bi-question-circle-fill " href="#portfolio"></a></li>
+          <li>
+		  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#AyudaModal">
+			<a class="nav-link scrollto bi-question-circle-fill " href="#portfolio"></a></button></li>
           <li><a class="nav-link scrollto bi-pencil-square" href="#pricing"></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -66,6 +73,62 @@
     </div>
   </header><!-- End Header -->
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Ajustes</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group form-check">
+			<input type="checkbox" class="form-check-input" id="checkModoOscuro">
+			<label class="form-check-label" for="exampleCheck1">Modo oscuro</label>
+		</div>
+		<div class="form-group form-check">
+			<input type="checkbox" class="form-check-input" id="checkModoMuyOscuro">
+			<label class="form-check-label" for="exampleCheck1">Modo muy oscuro</label>
+		</div>
+		<div class="form-group form-check">
+			<input type="checkbox" class="form-check-input" id="checkLetraGrande">
+			<label class="form-check-label" for="exampleCheck1">Letras grandes</label>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Ayuda -->
+<div class="modal fade" id="AyudaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Ajustes</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+			<div class="col-6">
+			Ey usted, ¿Está cansado de ser feo y tonto?, Sea solo feo con mis <a href="https://www.linkedin.com/in/marcos-robles-rodr%C3%ADguez-b867031b7/">clases particulares</a> empezando en Mayo a precios de regalo.
+			Con mis clases usted pasará de sacar un 4,5 en su peor asignatura a sacar un 2.
+			</div>
+			<div class="col-6">
+			<img src="https://i.imgur.com/FcCXzTY.jpg" width="200px" height="200px"">
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+</div>
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
     <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
@@ -94,6 +157,8 @@
   <main id="main" style="background-color: #FFD166">
 
     <!-- ======= Services Section ======= -->
+	<!-- Button trigger modal -->
+
     <section id="services" class="services">
       <div class="container" style="background-color: #118AB2; border-radius: 20px; padding-bottom: 50px">
         <br>
@@ -265,12 +330,13 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
