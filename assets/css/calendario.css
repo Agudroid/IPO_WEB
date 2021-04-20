@@ -5,14 +5,14 @@ body {
 }
 
 #calendar {
-    max-width: 800px;
     margin:50px;
+    margin-top: 0;
+    margin-bottom: 0;
     background: white;
     border-radius: 15px;
-    padding: 25px;
+    padding: 35px;
 }
+
 .container {
-    align-items: center;
-    align-content: center;
-    text-align: center;
+    max-width: 900px;
 }

@@ -8,11 +8,13 @@ document.addEventListener('DOMContentLoaded', function() {
             center: 'title',
             right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
         },
+        initialView: 'dayGridMonth',
         initialDate: actualDay,
-        navLinks: true, // can click day/week names to navigate views
         selectable: true,
         businessHours: true,
+        configurable: true,
         selectMirror: true,
+        weeks: actualDay,
         select: function(arg) {
             var title = prompt('Event Title:');
             if (title) {
@@ -26,16 +28,13 @@ document.addEventListener('DOMContentLoaded', function() {
             calendar.unselect()
         },
         eventClick: function(arg) {
-        var editar = prompt("¿Qué quieres hacer?");
             if (confirm('Are you sure you want to delete this event?')) {
                 arg.event.remove()
-            } if (confirm('Edit the event')){
-                arg.event().editable
             }
         },
         editable: true,
         dayMaxEvents: true, // allow "more" link when too many events
-
+        repeat: true
     });
     calendar.render();
 });
