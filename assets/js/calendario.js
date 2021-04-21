@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         selectMirror: true,
         weeks: actualDay,
         select: function(arg) {
-            var title = prompt('Event Title:');
+            var title = prompt('¿Qué quieres apuntar?');
             if (title) {
                 calendar.addEvent({
                     title: title,
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
             calendar.unselect()
         },
         eventClick: function(arg) {
-            if (confirm('Are you sure you want to delete this event?')) {
+            if (confirm('¿Estás seguro de querer borrar este evento?')) {
                 arg.event.remove()
             }
         },
