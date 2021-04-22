@@ -4,19 +4,20 @@ document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
         headerToolbar: {
-            left: 'prev,next today',
+            left: 'prev,next,today',
             center: 'title',
             right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
         },
         initialView: 'dayGridMonth',
         initialDate: actualDay,
         selectable: true,
+        navLinks: true,
         businessHours: true,
         configurable: true,
         selectMirror: true,
         weeks: actualDay,
         select: function(arg) {
-            var title = prompt('Event Title:');
+            var title = prompt('Introduce el nombre del evento');
             if (title) {
                 calendar.addEvent({
                     title: title,
@@ -28,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
             calendar.unselect()
         },
         eventClick: function(arg) {
-            if (confirm('Are you sure you want to delete this event?')) {
+            if (confirm('¿Seguro que desea eliminarlo?')) {
                 arg.event.remove()
             }
         },
