@@ -13,6 +13,6 @@ body {
     padding: 35px;
 }
 
-.container {
+.container.background {
     max-width: 900px;
 }
