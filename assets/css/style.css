@@ -494,7 +494,6 @@ section {
   overflow: hidden;
 }
 
-
 .section-title h2 {
   font-size: 14px;
   font-weight: 500;
@@ -1641,11 +1640,8 @@ section {
   color: white;
 }
 
-.inicio{
+.inicio {
   display:flex;
   justify-content: space-around;
 
-}
-.services.container {
-  align-items: center;
 }
