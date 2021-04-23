@@ -250,3 +250,11 @@
   });
 
 })()
+
+function notificarError(){
+  alert("Se ha notificado correctamente del error");
+}
+
+function paginaNoDisponible(){
+  alert("Página en construcción, prueba en otra");
+}
