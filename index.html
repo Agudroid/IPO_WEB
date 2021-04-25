@@ -48,7 +48,11 @@
                 <img src="assets/vendor/logo.svg" class="img-fluid" alt="logo median">
             </a>
         </div>
+
         <nav id="navbar" class="navbar">
+            <div>
+                <span class="bi bi-mic" style="color:black; margin-right: 10px"></span>
+            </div>
             <ul>
                 <li><a class="nav-link scrollto active" href="index.html">Inicio</a></li>
                 <li><a class="nav-link scrollto" href="clases.html">Clases</a></li>
@@ -75,35 +79,105 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
+
+
+
             <div class="modal-body">
-                <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="checkModoOscuro">
-                    <label class="form-check-label">Modo oscuro</label>
-                </div>
-                <div class="form-group form-check">
-                    <input type="radio" name="daltonismo" value="1" class="form-check-input" id="checkModoDaltonicoP">
-                    <label class="form-check-label">Modo daltonico (protanopia)</label>
-                </div>
-                <div class="form-group form-check">
-                    <input type="radio" name="daltonismo" value="2" class="form-check-input" id="checkModoDaltonicoD">
-                    <label class="form-check-label">Modo daltonico (deuteranopia)</label>
-                </div>
-                <div class="form-group form-check">
-                    <input type="radio" name="daltonismo" value="3" class="form-check-input" id="checkModoDaltonicoT">
-                    <label class="form-check-label">Modo daltonico (tritanopia)</label>
-                </div>
-                <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="checkLetraGrande">
-                    <label class="form-check-label">Fuente Grande</label>
-                </div>
-                <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="checkVoz">
-                    <label class="form-check-label">Texto a voz</label>
-                </div>
-                <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="checkAsistente">
-                    <label class="form-check-label">Accesibilidad mediante asistente virtual</label>
-                </div>
+                <li class="dropdown"><a href="#"><span>Visibilidad</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="checkModoOscuro">
+                                <label class="form-check-label">Modo oscuro</label>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                            <div class="form-group form-check">
+                                <input type="radio" name="daltonismo" value="1" class="form-check-input" id="checkModoDaltonicoP">
+                                <label class="form-check-label">Modo daltonico (protanopia)</label>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="form-group form-check">
+                                <input type="radio" name="daltonismo" value="2" class="form-check-input" id="checkModoDaltonicoD">
+                                <label class="form-check-label">Modo daltonico (deuteranopia)</label>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="form-group form-check">
+                                <input type="radio" name="daltonismo" value="3" class="form-check-input" id="checkModoDaltonicoT">
+                                <label class="form-check-label">Modo daltonico (tritanopia)</label>
+                            </div>
+                        </a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#"><span>Texto</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkLetraGrande">
+                                    <label class="form-check-label">Fuente Grande</label>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="form-group form-check">
+                                    <p>Tamaño fuente: <input type="number"> <input type="submit" value="Aceptar"></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="checkVoz">
+                                <label class="form-check-label">Texto a voz</label>
+                            </div>
+                        </a></li>
+                        <li><a href="#">
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="checkAsistente">
+                                <label class="form-check-label">Accesibilidad mediante asistente virtual</label>
+                            </div>
+                        </a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#"><span>Otros ajustes</span> <i class="bi bi-chevron-down"></i></a>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkAsistente">
+                                    <label class="form-check-label">Activar doble click para acceder</label>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkAsistente">
+                                    <label class="form-check-label">Activar lupa</label>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkAsistente">
+                                    <label class="form-check-label">Limitar vocabulario</label>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+
+
+
+
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Cancel</button>
@@ -200,7 +274,7 @@
                     <p>¿Qué ofrecemos?</p>
                 </div>
                 <div class="inicio">
-                    <div class="col-lg-5 mt-5">
+                    <div class="col-5 mt-5">
                         <a href="calendario.html">
                             <div class="pp icon-box align-items-md-center" data-aos="zoom-in-left" data-aos-delay="400">
                                 <img src="assets/img/index/calendario.svg" alt="calendario" height="60" width="120">
@@ -208,7 +282,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-5 mt-5">
+                    <div class="col-5 mt-5">
                         <a href="clases.html">
                             <div class="pp icon-box align-items-md-center" data-aos="zoom-in-left" data-aos-delay="500">
                                 <img src="assets/img/index/clases.svg" alt="clases" height="60" width="120">
