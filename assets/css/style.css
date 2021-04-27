@@ -1657,3 +1657,17 @@ section {
 .monstruoAyuda {
   margin-right: 20px;
 }
+
+.mover {
+  padding: 5px;
+  color:#ef476f;
+  border: 2px;
+  border-radius: 10px;
+  border-color: #ef476f;
+  text-decoration: none;
+}
+
+.mover:hover{
+  color: white;
+  background: #ef476f;
+}
