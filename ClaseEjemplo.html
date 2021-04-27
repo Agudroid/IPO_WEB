@@ -245,14 +245,61 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-7">
-                        <p>Hola, creo que necesitas ayuda, voy a explicarte lo que puedes hacer en esta pantalla.</p>
-                        <p>Para empezar tienes las opciones de navegación en la parte superior para venir a esta
-                            pantalla cuando estés en otra, o para ir al calendario o a tus clases.</p>
-                        <p>Además, en la parte superior también tienes el botón de ayuda para siempre que necesites
-                            ayuda y las opciones, donde puedes usar a las opciones de accesibilidad.</p>
-                        <p>En el centro de la pantalla tienes botones de navegación que te llevarán al calendario y a
-                            tus clases.</p>
-                        <p>Y eso es todo por esta pantalla.</p>
+                        <div class="pagination-container">
+                            <div data-page="1">
+                                <p>Hola, creo que necesitas ayuda, voy a explicarte lo que puedes hacer en esta
+                                    pantalla.</p>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                            </div>
+                            <div data-page="2" style="display:none;">
+                                <p>Para empezar tienes las opciones de navegación en la parte superior para venir a esta
+                                    pantalla cuando estés en otra, o para ir al calendario o a tus clases.</p>
+                                <br>
+                                <br>
+                            </div>
+                            <div data-page="3" style="display:none;">
+                                <p>Además, en la parte superior también tienes el botón de ayuda para siempre que
+                                    necesites ayuda y las opciones, donde puedes usar a las opciones de
+                                    accesibilidad.</p>
+                                <br>
+                                <br>
+                            </div>
+                            <div data-page="4" style="display:none;">
+                                <p>En el centro de la pantalla tienes botones de navegación que te llevarán al
+                                    calendario y a tus clases.</p>
+                                <br>
+                                <br>
+                                <br>
+                            </div>
+                            <div data-page="5" style="display:none;">
+                                <p>Y eso es todo por esta pantalla.</p>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                            </div>
+
+                            <div class="text-center">
+                                <div class="pagination pagination-centered">
+                                    <ul class="pagination ">
+                                        <li data-page="-" class="page-item"><a class="page-link" href="#">Previous</a>
+                                        </li>
+                                        <li data-page="1" class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li data-page="2" class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li data-page="3" class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li data-page="4" class="page-item"><a class="page-link" href="#">4</a></li>
+                                        <li data-page="5" class="page-item"><a class="page-link" href="#">5</a></li>
+                                        <li data-page="+" class="page-item"><a class="page-link" href="#">Next</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="col-4">
                         <img class="monstruoAyuda" src="assets/img/navbar/monstruoAyuda.png" width="260px"
@@ -382,6 +429,38 @@
         crossorigin="anonymous"></script>
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
+
+<script>
+    var paginationHandler = function () {
+        // store pagination container so we only select it once
+        var $paginationContainer = $(".pagination-container"),
+            $pagination = $paginationContainer.find('.pagination ul');
+        // click event
+        $pagination.find("li a").on('click.pageChange', function (e) {
+            e.preventDefault();
+            // get parent li's data-page attribute and current page
+            var parentLiPage = $(this).parent('li').data("page"),
+                currentPage = parseInt($(".pagination-container div[data-page]:visible").data('page')),
+                numPages = $paginationContainer.find("div[data-page]").length;
+            // make sure they aren't clicking the current page
+            if (parseInt(parentLiPage) !== parseInt(currentPage)) {
+                // hide the current page
+                $paginationContainer.find("div[data-page]:visible").hide();
+                if (parentLiPage === '+') {
+                    // next page
+                    $paginationContainer.find("div[data-page=" + (currentPage + 1 > numPages ? numPages : currentPage + 1) + "]").show();
+                } else if (parentLiPage === '-') {
+                    // previous page
+                    $paginationContainer.find("div[data-page=" + (currentPage - 1 < 1 ? 1 : currentPage - 1) + "]").show();
+                } else {
+                    // specific page
+                    $paginationContainer.find("div[data-page=" + parseInt(parentLiPage) + "]").show();
+                }
+            }
+        });
+    };
+    $(document).ready(paginationHandler);
+</script>
 
 </body>
 
