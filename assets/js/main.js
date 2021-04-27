@@ -256,5 +256,5 @@ function notificarError(){
 }
 
 function paginaNoDisponible(){
-  alert("Página en construcción, prueba en otra");
+  alert("Página en construcción, prueba con 1ºA");
 }

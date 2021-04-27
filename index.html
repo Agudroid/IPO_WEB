@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Selecao Bootstrap Template - Index</title>
+    <title>Página Principal - Median</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -50,10 +50,9 @@
         </div>
 
         <nav id="navbar" class="navbar">
-            <div>
-                <span class="bi bi-mic" style="color:black; margin-right: 10px"></span>
-            </div>
             <ul>
+                <li><a class="nav-link scrollto"><img src="assets/img/navbar/microfono.svg" alt="microfono"
+                                                      class="icono"></a></li>
                 <li><a class="nav-link scrollto active" href="index.html">Inicio</a></li>
                 <li><a class="nav-link scrollto" href="clases.html">Clases</a></li>
                 <li><a class="nav-link scrollto" href="calendario.html">Calendario</a></li>
@@ -79,35 +78,59 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-
-
-
             <div class="modal-body">
                 <li class="dropdown"><a href="#"><span>Visibilidad</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
                         <li>
                             <a href="#">
                                 <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="checkModoOscuro">
-                                <label class="form-check-label">Modo oscuro</label>
+                                    <input type="checkbox" class="form-check-input" id="checkModoOscuro">
+                                    <label class="form-check-label">Modo oscuro</label>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkAltoContraste">
+                                    <label class="form-check-label">Alto contraste</label>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkPuntero">
+                                    <label class="form-check-label">Resaltar puntero</label>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkLupa">
+                                    <label class="form-check-label">Activar lupa</label>
                                 </div>
                             </a>
                         </li>
                         <li><a href="#">
                             <div class="form-group form-check">
-                                <input type="radio" name="daltonismo" value="1" class="form-check-input" id="checkModoDaltonicoP">
+                                <input type="radio" name="daltonismo" value="1" class="form-check-input"
+                                       id="checkModoDaltonicoP">
                                 <label class="form-check-label">Modo daltonico (protanopia)</label>
                             </div>
                         </a></li>
                         <li><a href="#">
                             <div class="form-group form-check">
-                                <input type="radio" name="daltonismo" value="2" class="form-check-input" id="checkModoDaltonicoD">
+                                <input type="radio" name="daltonismo" value="2" class="form-check-input"
+                                       id="checkModoDaltonicoD">
                                 <label class="form-check-label">Modo daltonico (deuteranopia)</label>
                             </div>
                         </a></li>
                         <li><a href="#">
                             <div class="form-group form-check">
-                                <input type="radio" name="daltonismo" value="3" class="form-check-input" id="checkModoDaltonicoT">
+                                <input type="radio" name="daltonismo" value="3" class="form-check-input"
+                                       id="checkModoDaltonicoT">
                                 <label class="form-check-label">Modo daltonico (tritanopia)</label>
                             </div>
                         </a></li>
@@ -118,15 +141,8 @@
                         <li>
                             <a href="#">
                                 <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="checkLetraGrande">
-                                    <label class="form-check-label">Fuente Grande</label>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="form-group form-check">
-                                    <p>Tamaño fuente: <input type="number"> <input type="submit" value="Aceptar"></p>
+                                    <p>Tamaño fuente: <input type="number" value="12"> <input type="submit"
+                                                                                              value="Aceptar"></p>
                                 </div>
                             </a>
                         </li>
@@ -149,7 +165,7 @@
                         <li>
                             <a href="#">
                                 <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="checkAsistente">
+                                    <input type="checkbox" class="form-check-input" id="checkClick">
                                     <label class="form-check-label">Activar doble click para acceder</label>
                                 </div>
                             </a>
@@ -157,31 +173,62 @@
                         <li>
                             <a href="#">
                                 <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="checkAsistente">
-                                    <label class="form-check-label">Activar lupa</label>
+                                    <input type="checkbox" class="form-check-input" id="checkVocabulario">
+                                    <label class="form-check-label">Limitar vocabulario</label>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="checkAsistente">
-                                    <label class="form-check-label">Limitar vocabulario</label>
+                                    <input type="checkbox" class="form-check-input" id="checkPulsarTeclas">
+                                    <label class="form-check-label">Evitar tecleo accidental</label>
                                 </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkTeclado">
+                                    <label class="form-check-label">Teclado en pantalla</label>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkAnimaciones">
+                                    <label class="form-check-label">Desactivar animaciones</label>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkLocalizar">
+                                    <label class="form-check-label">Localizar puntero (parpadeo)</label>
+                                    <p>Intervalo de parpadeo (en segundos) <input type="number" value="0.5" min="0.5" max="60"> <input type="submit"
+                                                                                              value="Aceptar"></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <label class="form-check-label">Idioma</label>
+                                <select name="Idioma">
+                                    <option>Español</option>
+                                    <option>English</option>
+                                    <option>Català</option>
+                                </select>
                             </a>
                         </li>
                     </ul>
                 </li>
 
-
-
-
-
-
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Cancel</button>
-                <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Save changes
+                <button type="button" class="btn btn-primary " data-dismiss="modal" aria-label="Close">Save changes
                 </button>
             </div>
         </div>
@@ -201,14 +248,15 @@
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-6">
-                        Ey usted, ¿Está cansado de ser feo y tonto?, Sea solo feo con mis <a
-                            href="https://www.linkedin.com/in/marcos-robles-rodr%C3%ADguez-b867031b7/">clases
-                        particulares</a> empezando en Mayo a precios de regalo.
-                        Con mis clases usted pasará de sacar un 4,5 en su peor asignatura a sacar un 2.
+                    <div class="col-7">
+                        <p>Hola, creo que necesitas ayuda, voy a explicarte lo que puedes hacer en esta pantalla.</p>
+                        <p>Para empezar tienes las opciones de navegación en la parte superior para venir a esta pantalla cuando estés en otra, o para ir al calendario o a tus clases.</p>
+                        <p>Además, en la parte superior también tienes el botón de ayuda para siempre que necesites ayuda y las opciones, donde puedes usar a las opciones de accesibilidad.</p>
+                        <p>En el centro de la pantalla tienes botones de navegación que te llevarán al calendario y a tus clases.</p>
+                        <p>Y eso es todo por esta pantalla.</p>
                     </div>
-                    <div class="col-6">
-                        <img src="https://i.imgur.com/FcCXzTY.jpg" width="200px" height="200px" alt="">
+                    <div class="col-4">
+                        <img class="monstruoAyuda" src="assets/img/index/monstruoAyuda.png" width="260px" height="260px" alt="monstruo ayuda">
                     </div>
                     <br>
                     <br>
@@ -255,11 +303,11 @@
     <div class="container-fluid" style="align-content: center; justify-items: center">
         <div class="row" style="align-items: center">
             <div class="col-6">
-                <img src="assets/img/MonstruoSinOjos-removebg-preview.png " style="float:right" height=" 100"
+                <img src="assets/img/index/MonstruoSinOjos-removebg-preview.png " style="float:right" height=" 130"
                      width="150" alt="monstruo infantil"/>
             </div>
             <div class="col-6">
-                <h1>Bienvenido!!!</h1>
+                <p class="welcome">¡¡¡Bienvenido!!!</p>
             </div>
         </div>
 
@@ -270,7 +318,7 @@
                 <br>
                 <br>
                 <div class="section-title" data-aos="zoom-out">
-                    <h2>Servicios</h2>
+                    <h2 style="color:white">Servicios</h2>
                     <p>¿Qué ofrecemos?</p>
                 </div>
                 <div class="inicio">

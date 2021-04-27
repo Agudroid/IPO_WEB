@@ -1643,5 +1643,17 @@ section {
 .inicio {
   display:flex;
   justify-content: space-around;
+}
 
+.welcome {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #ef476f;
+}
+
+.monstruoAyuda {
+  margin-right: 20px;
 }

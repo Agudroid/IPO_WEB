@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         initialDate: actualDay,
         selectable: true,
         navLinks: true,
+        locales: 'es',
         businessHours: true,
         configurable: true,
         selectMirror: true,
